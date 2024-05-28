@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Characters</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/icons/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/config.css">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <a href="#"><img id="RnMlogo" src="https://logos-world.net/wp-content/uploads/2022/01/Rick-And-Morty-Logo.png" alt=""></a>
+            <ul id="navMenu">
+                <li onclick="showSearch()">SEARCH</li>
+                <li><a href="https://rickandmortyapi.com/documentation">ABOUT</a></li>
+            </ul>
+        </nav>
+        <figure id="headerSection">
+            <img id="headerImg" src="/assets/images/rick-and-morty.png" alt="">
+            <figcaption id="imgFooter">
+                <button id="mainButton" onclick="showAll(docPage)"><h1>Know your favorite characters!</h1></button>
+            <input id="idInput" placeholder="ID Number" type="number">
+            <span id="validation"></span>
+            <button onclick="searCharacter()">Search Character</button>
+            </figcaption>
+        </figure>
+    </header>
+    <main>
+        <div id="card-dinamica" class="backgrounds"></div>
+        <div id="demo" class="backgrounds"></div>
+    </main>
+    <footer>
+        <div id="pagesNav">
+            <div>
+                <button id="prevP" class="pageButton" onclick="pPage()">Previous page</button>
+            </div>
+            <span id="countSpan"></span>            
+            <div>
+                <button id="nextP" class="pageButton" onclick="nPage()">Next Page</button>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
+<!--Card template
+    <div class="card">
+    <span class="characterId"></span>
+    <figure class="cardFigure">
+        <img src="" alt="" class="profilePicture">
+        <figcaption class="textCard name"></figcaption>
+    </figure>
+    <div class="cardFooter">
+        <span class="cardT">whoops!</span>
+        <span class="cardS">No character found with such id :'c</span>
+    </div>
+</div>
+-->
+

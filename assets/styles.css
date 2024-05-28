@@ -1,0 +1,196 @@
+header{
+    background-color: darkblue;
+    height: 65vh;
+    background: linear-gradient(90deg, rgba(78,0,99,1) 0%, rgba(0,0,202,1) 50%, rgba(78,0,99,1) 100%);
+    /*transform: rotate(-5deg);*/
+}
+
+#navBar{
+    position: relative;
+    z-index: 100;
+    margin: 0 20px;
+}
+#RnMlogo{
+    width: 200px;
+    height: auto;
+}
+
+#headerSection{
+    position: absolute;
+    top: -27.5%;
+    height: 500px;
+    overflow: visible;
+    z-index: 1;
+}
+#imgFooter{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 200px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#headerImg{
+    width: 50%;
+    height: auto;
+    z-index: 0;
+}
+
+#mainButton{
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mainButton:hover{
+    color: blue;
+}
+#idInput{
+    width: 80px;
+    padding: 15px;
+    border: solid grey;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#validation{
+    color: red;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    background-image: var(--gradient);
+    /*padding-top: 50px;*/
+}
+.backgrounds{
+    width: 100%;
+}
+#card-dinamica{
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+#demo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#demox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#cardT{
+    font-size: 50px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#headerSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navMenu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 150px;
+}
+
+.card{
+    margin: 5%;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.6);
+border-radius: 50px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+min-width: 300px;
+min-height: 350px;
+}
+
+.cardFigure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid black 1.5px;
+}
+.profilePicture{
+    width: 60%;
+    border-radius: 30px;
+}
+.cardFooter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.textCard{
+    text-align: center;
+}
+
+.characterId{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.name{
+    margin: 20px;
+}
+.cardFooter{
+    margin: 15px;
+}
+
+#pagesNav{
+    width: 90%;
+    margin: 30px auto;
+    display: none;
+    justify-content: space-between;
+    /*background-color: yellow;*/
+}
+#nextP{
+    display: block;
+
+}
+#prevP{
+    display: none;
+}
+
+#countSpan{
+    text-align: center;
+
+}
